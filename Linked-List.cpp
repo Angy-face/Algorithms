@@ -4,15 +4,15 @@ using namespace std;
 
 class Node{
     public:
-    int data;
-    Node *next;
-    Node *prev;
+        int data;
+        Node *next;
+        Node *prev;
 
-    Node(int data){
-        this->data = data;
-        this->prev = nullptr;
-        this->next = nullptr;
-    }
+        Node(int data){
+            this->data = data;
+            this->prev = nullptr;
+            this->next = nullptr;
+        }
 };
 
 void printNodeSingleForward(Node *n){

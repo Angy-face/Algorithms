@@ -3,13 +3,13 @@
 using namespace std;
 
 //isFull isEmpty enqueue dequeue SIZE5
-class QueueArr{
+class Queue{
     private:
         int Q[SIZE];
         int front;
         int rear;
     public:
-        QueueArr(){front = -1 , rear = -1;}
+        Queue(){front = -1 , rear = -1;}
 
         int isFull(){
             return rear == SIZE-1;
@@ -41,7 +41,7 @@ class QueueArr{
 
 };
 int main(){
-    QueueArr Q;
+    Queue Q;
     Q.enqueue(1);
     Q.enqueue(2);
     Q.enqueue(3);

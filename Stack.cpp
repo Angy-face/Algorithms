@@ -5,24 +5,24 @@ using namespace std;
 
 class Stack_Arr{
     private:
-    int arr[MAX_SIZE];
-    int top_index;
+        int arr[MAX_SIZE];
+        int top_index;
 
     public:
-    Stack_Arr (){
-        top_index = -1;
-    }
-    void push (int n){
-        arr[++top_index] = n;
-    }
+        Stack_Arr (){
+            top_index = -1;
+        }
+        void push (int n){
+            arr[++top_index] = n;
+        }
 
-    int pop(){
-        return arr[top_index--];
-    }
+        int pop(){
+            return arr[top_index--];
+        }
 
-    int top(){
-        return arr[top_index];
-    }
+        int top(){
+            return arr[top_index];
+        }
 };
 
 class Node{
