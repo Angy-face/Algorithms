@@ -26,7 +26,7 @@ class PriorityQueue{
                 return;
             }
             Node *temp = head;
-            while(temp->next != nullptr && p > temp->next->priority){//No need to check head again [temp->next->priority]
+            while(temp->next != nullptr && p >= temp->next->priority){//No need to check head again [temp->next->priority]
                 temp = temp->next;
             }
             newNode->next = temp->next;
@@ -53,8 +53,8 @@ class PriorityQueue{
 
 int main(){
     PriorityQueue Q;
-    Q.enqueue(1,3);
-    Q.enqueue(2,1);
+    Q.enqueue(1,1);
+    Q.enqueue(2,2);
     Q.enqueue(3,2);
     Q.show();
 
